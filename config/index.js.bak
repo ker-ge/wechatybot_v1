@@ -1,0 +1,34 @@
+module.exports = {
+    summonName: '那个谁', // 召唤机器人出来的名字
+    noticeArr: [{ name: '那个谁' }], // 报错通知的数组
+    // 打卡通知配置
+    dakaConf: {
+        'toConfArr': [{ topic: '通知打卡群' }, { topic: '机器人测试群' }],
+        'sbanDate': '00 00 09 * * *',
+        'xbanDate': '00 00 18 * * *',
+    },
+    // 集思录配置
+    jisiluConf: {
+        'toConfArr': [{ topic: '通知打卡群' }, { topic: '机器人测试群' }],
+        'dayDate': '00 30 08 * * *',
+    },
+    // 链闻通知配置
+    chainnewsConf: {
+        'toConfArr': [{ topic: '通知打卡群' }, { topic: '机器人测试群' }],
+        'dayDate': '* */30 * * * *',
+    },
+    // 天气通知配置
+    tianqiConf: {
+        'toConfArr': [{ topic: '通知打卡群' }, { topic: '机器人测试群' }],
+        'dayDate': '00 00 08 * * *',
+        'defaultCity': '广州', // 默认城市
+    },
+    juheApiKey: {
+        tianqiKey: '', // 天气查询
+        birthdaybookKey: '', // 生日书查询
+        jokeKey: '', // 笑话查询
+        toutiaoKey: '', // 头条新闻查询
+        holidayKey: '', // 节假日查询
+        phoneLocationKey: '', // 手机归属地查询
+    }
+}
